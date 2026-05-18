@@ -1,0 +1,15 @@
+Your Conversation Log:
+You: im koo
+AI: Hi there! Nice to meet you, Koo! (Or do you mean you're doing cool?) 
+
+Either way, how's it going? How can I help you today?
+
+You: my name is actually Kool, not Koo
+AI: My apologies, Kool! Thanks for correcting me. 
+
+Nice to meet you properly! What's on your mind today?
+
+You: what is my name
+AI: Your name is Kool!
+
+End of Conversation
