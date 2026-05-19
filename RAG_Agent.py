@@ -4,25 +4,23 @@ from langgraph.graph import StateGraph, END
 from typing import TypedDict, Annotated, Sequence
 from langchain_core.messages import BaseMessage, SystemMessage, HumanMessage, ToolMessage
 from operator import add as add_messages
-from langchain_openai import ChatOpenAI
-from langchain_openai import OpenAIEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_core.tools import tool
 
 load_dotenv()
 
-llm = ChatOpenAI(
-    model="gpt-4o", temperature = 0) # I want to minimize hallucination - temperature = 0 makes the model output more deterministic 
+llm = ChatGoogleGenerativeAI(model="gemma-4-31b-it", temperature=0)
 
-# Our Embedding Model - has to also be compatible with the LLM
-embeddings = OpenAIEmbeddings(
-    model="text-embedding-3-small",
+# Our Embedding Model - compatible with langchain_google_genai
+embeddings = GoogleGenerativeAIEmbeddings(
+    model="models/gemini-embedding-001",
 )
 
 
-pdf_path = "Stock_Market_Performance_2024.pdf"
+pdf_path = "attention_is_all_you_need.pdf"
 
 
 # Safety measure I have put for debugging purposes :)
@@ -49,7 +47,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 pages_split = text_splitter.split_documents(pages) # We now apply this to our pages
 
 persist_directory = r"C:\Vaibhav\LangGraph_Book\LangGraphCourse\Agents"
-collection_name = "stock_market"
+collection_name = "attention_is_all_you_need"
 
 # If our collection does not exist in the directory, we create using the os command
 if not os.path.exists(persist_directory):
@@ -80,13 +78,13 @@ retriever = vectorstore.as_retriever(
 @tool
 def retriever_tool(query: str) -> str:
     """
-    This tool searches and returns the information from the Stock Market Performance 2024 document.
+    This tool searches and returns information from the Attention Is All You Need document.
     """
 
     docs = retriever.invoke(query)
 
     if not docs:
-        return "I found no relevant information in the Stock Market Performance 2024 document."
+        return "I found no relevant information in the Attention Is All You Need document."
     
     results = []
     for i, doc in enumerate(docs):
@@ -110,8 +108,8 @@ def should_continue(state: AgentState):
 
 
 system_prompt = """
-You are an intelligent AI assistant who answers questions about Stock Market Performance in 2024 based on the PDF document loaded into your knowledge base.
-Use the retriever tool available to answer questions about the stock market performance data. You can make multiple calls if needed.
+You are an intelligent AI assistant who answers questions about Attention Is All You Need based on the PDF document loaded into your knowledge base.
+Use the retriever tool available to answer questions about the knowledge base. You can make multiple calls if needed.
 If you need to look up some information before asking a follow up question, you are allowed to do that!
 Please always cite the specific parts of the documents you use in your answers.
 """
