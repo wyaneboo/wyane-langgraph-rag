@@ -2,6 +2,7 @@ import os
 import sys
 from typing import TypedDict, List, Union
 from google import genai
+from google.genai import errors
 from langchain_core.messages import HumanMessage, AIMessage
 from langgraph.graph import StateGraph, START, END
 from langsmith import wrappers
@@ -36,10 +37,16 @@ def process(state: AgentState) -> AgentState:
         for message in state["messages"]
     )
 
-    response = client.models.generate_content(
-                model=MODEL,
-                contents=contents,
-            )
+    try:
+        response = client.models.generate_content(
+                    model=MODEL,
+                    contents=contents,
+        )
+    except errors.APIError as exc:
+        error_message = f"Google GenAI API error while using {MODEL}: {exc}"
+        print(f"\nAI: {error_message}")
+        state["messages"].append(AIMessage(content=error_message))
+        return state
 
     state["messages"].append(AIMessage(content=response.text)) 
     print(f"\nAI: {response.text}")

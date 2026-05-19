@@ -1,5 +1,7 @@
 Your Conversation Log:
-You: what is 2 plus 4
-AI: 2 plus 4 is 6.
+You: what is my name
+AI: I don't know your name. As an AI, I don't have access to your personal identity or private information unless you tell me.
+
+What would you like me to call you?
 
 End of Conversation

@@ -88,7 +88,7 @@ def multiply(a: int, b: int) -> int:
 @tool
 def update(content: str) -> str:
     """Updates the report with the provided content."""
-    return f"Report has been updated successfully! The current content is:\n{content}"  
+
 @tool
 def save(filename: str) -> str:
     """Save the current report to a text file and finish the process.
@@ -96,23 +96,33 @@ def save(filename: str) -> str:
     Args:
         filename: Name for the text file.
     """
-    if not filename.endswith('.txt'):
-        filename = f"{filename}.txt"
-    try:
-        with open(filename, 'w') as file:
-            file.write(content)
-        print(f"\n💾 Report has been saved to: {filename}")
-        return f"Report has been saved successfully to '{filename}'."
-    except Exception as e:
-        return f"Error saving report: {str(e)}"
+
+#tools to retrieve relevant information from the vectorstore based on user query
+@tool
+def retriever_tool(query: str) -> str:
+    """
+    This tool searches and returns information from the insurance reports.
+    """
 
 # Bind the tools to the language model
-tools = [add, subtract, multiply, update, save]
+calculation_tools = [add, subtract, multiply]
+save_tools = [update, save]
+retriever_tools = [retriever_tool]
+tools = calculation_tools + save_tools + retriever_tools
 model = ChatGoogleGenerativeAI(model="gemma-4-31b-it").bind_tools(tools)
 
 # Define the agent state and processing function
 class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
+
+system_prompt = """
+You are an insurance expert assistant. You have access to the following tools:
+1. Calculation tools: add, subtract, multiply - for performing basic calculations.
+2. Save tools: update, save - for updating and saving reports.
+3. Retriever tool: retriever_tool - for retrieving relevant information from the insurance reports.
+Use the tools as needed to answer user queries, perform calculations, and manage reports. Always provide clear and concise responses based on the user's input and the information available in the reports.
+
+"""
 
 # This function will process the user input, retrieve relevant information from the vectorstore, and generate a response using the language model.
 def rag_process(state: AgentState) -> AgentState:
@@ -128,7 +138,7 @@ def rag_process(state: AgentState) -> AgentState:
 
     # Generate a response using the language model, incorporating the relevant content
     response = model.invoke([
-        SystemMessage(content="You are an insurance expert assistant. Use the following relevant information to answer the user's query."),
+        SystemMessage(content=system_prompt),
         SystemMessage(content=relevant_content),
         HumanMessage(content=query)
     ])
@@ -139,20 +149,35 @@ def rag_process(state: AgentState) -> AgentState:
 
     return state
 
+#take action function
+def take_action(state: AgentState) -> AgentState:
+    """Execute tool calls from the LLM's response to the retriever tool, calculation tools, and save tools."""
+
 # Create the state graph for the agent
 graph = StateGraph(AgentState)
-graph.add_node("rag_process", rag_process)
-graph.add_node("tools", ToolNode(tools=tools))
+graph.add_node("llm", rag_process)
+graph.add_node("calculation_tools", ToolNode(tools=calculation_tools))
+graph.add_node("save_tools", ToolNode(tools=save_tools))
+graph.add_node("retriever_tools", ToolNode(tools=retriever_tools))
 
-graph.set_entry_point("rag_process")
+graph.set_entry_point("update_tools")
 graph.add_conditional_edges(
-    "rag_process", 
-    lambda state: "tool_calls" in state["messages"][-1].__dict__ and len(state["messages"][-1].tool_calls) > 0,
+# end if the last message is "exit", othrwise continue
+    "llm",
+    lambda state: "exit" if state["messages"][-1].content.lower() == "exit" else "continue",
     {
-        True: "tools",
-        False: END,
-    }, 
+        "continue": "tools",
+        "exit": END,
+    },
 )
 
-graph.add_edge("rag_process", END)
+graph.add_edge("llm", END)
+graph.add_edge("llm", "take_action")
+graph.add_edge("take_action", "update_tools", condition=lambda state: any(isinstance(msg, ToolMessage) and msg.name in [tool.name for tool in save_tools] for msg in state["messages"][-1:]))
+graph.add_edge("llm", "calculation_tools", condition=lambda state: any(isinstance(msg, ToolMessage) and msg.name in [tool.name for tool in calculation_tools] for msg in state["messages"][-1:]))
+graph.add_edge("llm", "retriever_tools", condition=lambda state: any(isinstance(msg, ToolMessage) and msg.name in [tool.name for tool in retriever_tools] for msg in state["messages"][-1:])
+graph.add_edge("calculation_tools", "llm")
+graph.add_edge("retriever_tools", "llm")
+
+
 agent = graph.compile()
