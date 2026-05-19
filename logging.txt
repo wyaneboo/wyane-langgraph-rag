@@ -1,7 +1,2041 @@
-Your Conversation Log:
-You: what is my name
-AI: I don't know your name. As an AI, I don't have access to your personal identity or private information unless you tell me.
+Insurance RAG Agent Conversation Log
 
-What would you like me to call you?
+User: what is the revenue of GE in 2025
+
+AI: {'type': 'thinking', 'thinking': 'The user is asking for the revenue of GE in 2025. I need to search the insurance reports to find this information.'}
+AI tool call: retriever_tool({'query': 'revenue of GE in 2025'})
+
+Tool retriever_tool: Source 1: gelm-bc-mc-ufar-eng-2025.pdf, page 11
+UNIT FUNDS ANNUAL repor T 2025
+9
+ Dana Sejati
+ Benchmark 
+ -  12 month
+ Mudharabah Deposit
+FUnDs PeRFoRMAnce
+YeAR 2025
+0%
+6%
+3%
+5%
+4%
+1%
+2%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Dana s ejati
+Lion Balanced Fund
+Note :
+Weighted Benchmark is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+ Lion Balanced Fund
+ Weighted Benchmark
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 13
+UNIT FUNDS ANNUAL repor T 2025
+11
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted Benchmark  is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/01/2025
+1/02/2025
+1/03/2025
+1/04/2025
+1/05/2025
+1/06/2025
+1/07/2025
+1/08/2025
+1/09/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Progressive Fund
+Lion s trategic Fund
+ Lion Progressive Fund
+ Benchmark -  FBM100
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 15
+UNIT FUNDS ANNUAL repor T 2025
+13
+ Lion AU-i Fund
+ Benchmark 
+ -  S&P / ASX 200  
+ Index (AUD)
+ Lion Asia Pac Fund
+ Benchmark  
+ -  MSCI AC AP  
+ ex Japan (SGD)
+Lion au-i Fund
+Lion a sia Pac Fund
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-10%
+-5%
+0%
+10%
+5%
+15%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+0%
+15%
+10%
+5%
+20%
+30%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 17
+UNIT FUNDS ANNUAL repor T 2025
+15
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-5%
+5%
+0%
+-10%
+10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-5%
+-10%
+0%
+5%
+10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion a dvanced s trategic Fund
+Lion asean Fund
+ Lion Advanced  
+ Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted benchmark derived 
+from 70% weight on Kuala 
+Lumpur Composite Index (KLCI) 
+return and 30% weight on MSCI 
+Asia ex Japan Index return
+ Lion ASEAN Fund
+ Benchmark  
+  -  MSCI ASEAN 
+INDEX (MYR)
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 10
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+8
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Dana Restu
+ Benchmark -  FBMS
+Dana Gemilang
+Dana Restu
+-25%
+-20%
+-15%
+5%
+0%
+-5%
+-10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-25%
+-20%
+-5%
+-10%
+-15%
+0%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+ Dana Gemilang
+ Benchmark -  FBMS
+
+AI: {'type': 'thinking', 'thinking': 'The search results provide information about "Unit Funds Annual Report 2025" and fund performance for various funds (Dana Sejati, Lion Balanced Fund, Lion Strategic Fund, etc.), but they do not mention the overall revenue of Great Eastern (GE) for 2025. I should try a more specific query or check if there are other reports. The current results are from `gelm-bc-mc-ufar-eng-2025.pdf`, which seems to be a Unit Funds Annual Report. Revenue for the company would likely be in a general annual report or financial statement.\n\nI will try searching for "revenue", "financial results", or "income statement" for 2025.'}
+AI tool call: retriever_tool({'query': 'Great Eastern revenue 2025 financial results income statement'})
+
+Tool retriever_tool: Source 1: gelm-others-ir-sr-2025.pdf, page 52
+GRI Standard Disclosure Title Page Reference and Remarks
+2-16 Communication of critical concerns Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-17 Collective knowledge of the highest 
+governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-18 Evaluation of the performance of the 
+highest governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 12
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+10
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Fixed 
+ Income Fund
+ Benchmark 
+ -  12 month FD
+ Lion Growth Fund
+ Benchmark -  FBM100
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-20%
+-15%
+-10%
+-5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Fixed Income Fund
+Lion Growth Fund
+
+Source 3: gelm-others-ir-sr-2025.pdf, page 52
+highest governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-19 Remuneration policies Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-20 Process to determine remuneration
+2-21 Annual total compensation ratio We do not disclose against this metric due to con fidentiality constraints.
+Strategy, policies and practices
+2-22 Statement from senior decision-
+maker
+Chairman’s Statement, page 2
+2-23 Values, principles, standards, and 
+norms of behaviour
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 10
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+8
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Dana Restu
+ Benchmark -  FBMS
+Dana Gemilang
+Dana Restu
+-25%
+-20%
+-15%
+5%
+0%
+-5%
+-10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-25%
+-20%
+-5%
+-10%
+-15%
+0%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+ Dana Gemilang
+ Benchmark -  FBMS
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 14
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+12
+ Lion US-i Fund
+ Benchmark 
+ -  S&P 500 (USD)
+ Lion UK-i Fund
+ Benchmark 
+ -  FTSE 100 (GBP)
+Lion us -i Fund
+Lion uK-i Fund
+-20%
+-15%
+0%
+-5%
+-10%
+5%
+10%
+15%
+20%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+10%
+20%
+-5%
+5%
+15%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+FUnDs PeRFoRMAnce
+YeAR 2025
+
+AI: {'type': 'thinking', 'thinking': 'The search results still haven\'t provided the revenue figure. Source 1 and 3 mention "Great Eastern Life Malaysia Financial Statements 2025", "Great Eastern General Malaysia Financial Statements 2025", and "Great Eastern Takaful Berhad Financial Statements 2025". This suggests that the financial data is split across different entities.\n\nI need to search for the specific financial statements or the "Statement of Profit or Loss" or "Revenue" for these entities in 2025. I\'ll try searching for "revenue" or "total income" specifically for "Great Eastern Life Malaysia", "Great Eastern General Malaysia", and "Great Eastern Takaful Berhad" for the year 2025.'}
+AI tool call: retriever_tool({'query': 'revenue total income 2025 Great Eastern Life Malaysia Great Eastern General Malaysia Great Eastern Takaful Berhad'})
+
+Tool retriever_tool: Source 1: gelm-others-ir-sr-2025.pdf, page 52
+GRI Standard Disclosure Title Page Reference and Remarks
+2-16 Communication of critical concerns Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-17 Collective knowledge of the highest 
+governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-18 Evaluation of the performance of the 
+highest governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate
+
+Source 2: gelm-others-ir-sr-2025.pdf, page 52
+• Great Eastern Life Malaysia: Life Insurance Association of Malaysia 
+(LIAM)
+• Great Eastern General Malaysia: General Insurance Association of 
+Malaysia (PIAM)
+• Great Eastern Takaful Berhad: Malaysian Takaful Association (MTA)
+• Asia Investor Group on Climate Change (AIGCC) –  participation through 
+Great Eastern Holding Limited’s membership
+2-29 Approach to stakeholder 
+engagement
+Stakeholder Engagement, page 9
+2-30 Collective bargaining agreements In Malaysia, the National Union of Commercial Workers (NUCW) and Insurance 
+Industry Administrative Of ficers Association (IIAOA) represent the applicable 
+cohorts on collective bargaining in Great Eastern Life Malaysia and Great 
+Eastern General Malaysia. There are no collective bargaining agreements 
+applicable to Great Eastern Takaful Berhad.
+GRI 3: Material Topics 2021
+3-1 Process to determine material topics Our Approach to Sustainability, page 10
+3-2 List of material topics Our Approach to Sustainability, page 10
+
+Source 3: gelm-others-ir-sr-2025.pdf, page 55
+GEC Great Eastern Cares
+GEGM Great Eastern General Malaysia
+GEGS Great Eastern General Insurance Limited, Singapore
+GEH Great Eastern Holdings Limited
+GELM Great Eastern Life Malaysia
+GEM Great Eastern Mall
+GETB Great Eastern Takaful Berhad
+GHG Greenhouse Gases
+GJ Gigajoule
+Glossary
+GRI Global Reporting Initiative
+GWP Gross Written Premium
+IAE Insurance-Associated Emissions
+ICAAP Internal Capital Adequacy Assessment Process
+IFRS International Financial Reporting Standards
+IPCC United Nations Intergovernmental Panel on Climate Change
+ISSB International Sustainability Standards Board
+JC3 Joint Committee on Climate Change
+KPI Key Performance Indicators
+LIAM Life Insurance Association of Malaysia
+MGE Menara Great Eastern
+MWh Megawatt-hour
+NatCat Modelling Natural Catastrophe Modelling
+NDC Nationally Determined Contributions
+NGFS Network for Greening the Financial System
+NZIA Net Zero Insurance Alliance
+OCBC Oversea-Chinese Banking Corporation
+
+Source 4: gelm-others-ir-sr-2025.pdf, page 52
+highest governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-19 Remuneration policies Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-20 Process to determine remuneration
+2-21 Annual total compensation ratio We do not disclose against this metric due to con fidentiality constraints.
+Strategy, policies and practices
+2-22 Statement from senior decision-
+maker
+Chairman’s Statement, page 2
+2-23 Values, principles, standards, and 
+norms of behaviour
+
+Source 5: gelm-others-ir-sr-2025.pdf, page 51
+Corporate Governance, page 7-41  
+Our Approach to Sustainability, page 5
+2-10 Nomination and selection of the 
+highest governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-11 Chair of the highest governance body Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-12 Role of the highest governance body 
+in overseeing the management of 
+impacts
+Sustainability Governance Structure, page 6
+2-13 Delegation of responsibility for 
+managing impacts
+
+AI: {'type': 'thinking', 'thinking': 'The search results are still not giving me the actual revenue numbers. They are mostly referring to where the financial statements can be found (e.g., "Great Eastern Life Malaysia Financial Statements 2025"). However, the `retriever_tool` is searching through the provided PDFs. If the revenue is in those PDFs, it should be appearing.\n\nWait, the results from `gelm-others-ir-sr-2025.pdf` are from a sustainability report (GRI standards). The actual financial statements might be in a different file or I need to search for specific terms like "Gross Written Premium" (GWP) which is a common revenue metric for insurance, or "Total Income".\n\nLet\'s try searching for "Gross Written Premium" and "Total Income" for 2025.'}
+AI tool call: retriever_tool({'query': '"Gross Written Premium" 2025 "Total Income" 2025'})
+
+Tool retriever_tool: Source 1: gelm-bc-mc-ufar-eng-2025.pdf, page 11
+UNIT FUNDS ANNUAL repor T 2025
+9
+ Dana Sejati
+ Benchmark 
+ -  12 month
+ Mudharabah Deposit
+FUnDs PeRFoRMAnce
+YeAR 2025
+0%
+6%
+3%
+5%
+4%
+1%
+2%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Dana s ejati
+Lion Balanced Fund
+Note :
+Weighted Benchmark is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+ Lion Balanced Fund
+ Weighted Benchmark
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 12
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+10
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Fixed 
+ Income Fund
+ Benchmark 
+ -  12 month FD
+ Lion Growth Fund
+ Benchmark -  FBM100
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-20%
+-15%
+-10%
+-5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Fixed Income Fund
+Lion Growth Fund
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 13
+UNIT FUNDS ANNUAL repor T 2025
+11
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted Benchmark  is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/01/2025
+1/02/2025
+1/03/2025
+1/04/2025
+1/05/2025
+1/06/2025
+1/07/2025
+1/08/2025
+1/09/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Progressive Fund
+Lion s trategic Fund
+ Lion Progressive Fund
+ Benchmark -  FBM100
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 15
+UNIT FUNDS ANNUAL repor T 2025
+13
+ Lion AU-i Fund
+ Benchmark 
+ -  S&P / ASX 200  
+ Index (AUD)
+ Lion Asia Pac Fund
+ Benchmark  
+ -  MSCI AC AP  
+ ex Japan (SGD)
+Lion au-i Fund
+Lion a sia Pac Fund
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-10%
+-5%
+0%
+10%
+5%
+15%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+0%
+15%
+10%
+5%
+20%
+30%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 16
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+14
+ Lion Enhanced
+ Equity Fund
+ Benchmark -  FBM100
+Lion enhanced equity Fund
+Lion small mid c ap Fund
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-30%
+-25%
+-20%
+-15%
+0%
+-5%
+-10%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Note : 
+Weighted Benchmark is derived 
+from 75% weight on FBM70 
+Total Return and 25% weight 
+on FBM Small Cap Total Return
+ Lion Small Mid Cap
+ Fund
+ Weighted Benchmark
+FUnDs PeRFoRMAnce
+YeAR 2025
+
+AI: {'type': 'thinking', 'thinking': 'I have tried several queries and the results are consistently returning fund performance or sustainability report references, but not the actual revenue figures for Great Eastern in 2025.\n\nIt\'s possible that the revenue information is not contained in the provided documents, or it\'s in a section I haven\'t hit yet. I\'ll try one last search for "revenue" and "income" without the year 2025, just in case the year is implied or listed differently. I\'ll also search for "financial highlights".'}
+AI tool call: retriever_tool({'query': '"financial highlights" revenue income "profit or loss"'})
+
+Tool retriever_tool: Source 1: gelm-others-mc-annual-financial-statement2025.pdf, page 34
+198201013982 (93745-A)
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+(Incorporated in Malaysia)
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE FINANCIAL YEAR ENDED 31 DECEMBER 2025
+2025 2024
+RM’000 RM’000
+Net profit for the financial year 1,534,140      1,298,988     
+Other comprehensive income/(loss):
+Other comprehensive income that will not be 
+   reclassified to statement of profit or loss in subsequent
+   periods:
+Net gain on equity instrument designated at fair value
+through other comprehensive income ("FVOCI") 76,952           140,052        
+Tax effects thereon           (12,002)          (19,473)
+Net other comprehensive income that will not be 
+   reclassified to statement of profit or loss in subsequent
+   periods (net of tax) 64,950           120,579        
+Other comprehensive income/(loss) that may be 
+   reclassified to statement of profit or loss in subsequent 
+   periods:
+Debt instruments at FVOCI:
+Net gain arising during the year 88,570           34,957
+
+Source 2: gelm-others-mc-annual-financial-statement2025.pdf, page 34
+reclassified to statement of profit or loss in subsequent 
+   periods:
+Debt instruments at FVOCI:
+Net gain arising during the year 88,570           34,957          
+Changes in allowance for Expected Credit Loss ("ECL") 4,816                      (23,409)
+Net realised (gain)/loss transferred to statement of profit or loss           (12,845) 9,868            
+80,541           21,416          
+Net insurance financial result
+Finance income/(expenses) from insurance contracts issued 21,605                  (192,737)
+Finance (expense)/income from reinsurance contracts held                (174) 10,847          
+Tax effects thereon             (9,551) 12,592          
+Net other comprehensive income/(loss) that may be 
+   reclassified to statement of profit or loss in subsequent
+   periods (net of tax) 92,421                  (147,882)
+Other comprehensive income/(loss) for the financial year, net of tax 157,371                  (27,303)
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 27
+UNIT FUNDS ANNUAL repor T 2025
+25
+StatementS of Income and expendIture
+For Financial Year Ended 31 December 2025
+  Lion equity Global
+  sustainability Fund
+       2025 2024
+       Rm Rm
+Net Investment Income:
+FVTPL - Mandatorily Measured:
+Interest Income   - -
+Dividend Income   - -
+FVTPL - Designated Upon Initial Recognition:
+Interest Income   - -
+AC:
+Interest Income   - -
+Cash And Bank Balances:
+Interest Income   913 3
+Investment Expenses   (5,038) (2,453)
+Net Gain On Disposal Of Securities   6,456 -
+Net Unrealised Investment Gain   1,089,504 205,297
+Foreign Exchange Gain   - -
+Other Income (Note 4)   - -
+t otal Income   1,091,835 202,847
+Management Expenses   45 -
+Net Loss On Disposal Of Securities   - -
+Net Unrealised Investment Loss   - -
+Investment Charge   87 ,004 32,091
+Foreign Exchange Loss   539,533 79,444
+t otal expenses   626,582 111,535
+excess Of Income Over expenditure/(expenditure Over Income) 
+Before t axation   465,253 91,312
+Taxation   (38,135) (10,061)
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 46
+provisions of the financial assets. The Funds determine the classification of its financial assets and 
+liabilities at initial recognition.
+At initial recognition, the Funds measure a financial asset at its fair value, plus, in the case of a financial 
+asset not at FVTPL, transaction costs that are directly attributable to the acquisition of the financial 
+asset.  Transaction costs for financial assets carried at fair value through profit or loss are recognised as 
+expense in the Statements of Income and Expenditure.
+Regular way purchase or sale of a financial asset
+All regular way purchases and sales of financial assets are recognised or derecognised on trade date 
+i.e., the date that the Funds commit to purchase or sell the asset. Regular way purchases or sales 
+are purchases or sales of financial assets that require delivery of assets within the period generally 
+established by regulation or convention in the marketplace concerned.
+noteS to fInancIaL StatementS
+
+Source 5: gelm-others-mc-annual-financial-statement2025.pdf, page 127
+Net insurance finance income/(expenses) (7,993,181)      (181,890)         (8,175,071)      
+Total net investment and insurance financial result 610,671          (20,422)           590,249          
+18.1 Interest income
+Financial assets not measured at FVTPL
+Financial assets measured at FVOCI 228,136          -                      228,136          
+Financial assets measured at AC 141,744          -                      141,744          
+Total interest income calculated using the effective interest rate 369,880          -                      369,880          
+Financial assets measured at FVTPL 2,063,402       -                      2,063,402       
+Total interest income   2,433,282       -                      2,433,282       
+The table below presents an analysis of net investment income and net insurance financial result recognised in profit or loss and OCI in the period: (Cont'd.)
+125
+
+AI: {'type': 'thinking', 'thinking': 'I have found a "Statement of Comprehensive Income" for "Great Eastern Life Assurance (Malaysia) Berhad" in `gelm-others-mc-annual-financial-statement2025.pdf`.\n\nHowever, the snippet provided for page 34 shows "Net profit for the financial year" as RM 1,534,140,000 (since it\'s in RM\'000). It doesn\'t explicitly show the "Revenue" or "Total Income" on that specific page snippet.\n\nWait, Source 3 from `gelm-bc-mc-ufar-eng-2025.pdf` shows "Total Income" for a specific fund ("Lion equity Global sustainability Fund"), which is not the overall GE revenue.\n\nI need to find the "Total Income" or "Revenue" for the main entity "Great Eastern Life Assurance (Malaysia) Berhad" or the group. I will search for "Total Income" or "Revenue" specifically within `gelm-others-mc-annual-financial-statement2025.pdf`.'}
+AI tool call: retriever_tool({'query': '"Total Income" "Revenue" 2025 in gelm-others-mc-annual-financial-statement2025.pdf'})
+
+Tool retriever_tool: Source 1: gelm-bc-mc-ufar-eng-2025.pdf, page 11
+UNIT FUNDS ANNUAL repor T 2025
+9
+ Dana Sejati
+ Benchmark 
+ -  12 month
+ Mudharabah Deposit
+FUnDs PeRFoRMAnce
+YeAR 2025
+0%
+6%
+3%
+5%
+4%
+1%
+2%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Dana s ejati
+Lion Balanced Fund
+Note :
+Weighted Benchmark is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+ Lion Balanced Fund
+ Weighted Benchmark
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 12
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+10
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Fixed 
+ Income Fund
+ Benchmark 
+ -  12 month FD
+ Lion Growth Fund
+ Benchmark -  FBM100
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-20%
+-15%
+-10%
+-5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Fixed Income Fund
+Lion Growth Fund
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 13
+UNIT FUNDS ANNUAL repor T 2025
+11
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted Benchmark  is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/01/2025
+1/02/2025
+1/03/2025
+1/04/2025
+1/05/2025
+1/06/2025
+1/07/2025
+1/08/2025
+1/09/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Progressive Fund
+Lion s trategic Fund
+ Lion Progressive Fund
+ Benchmark -  FBM100
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 15
+UNIT FUNDS ANNUAL repor T 2025
+13
+ Lion AU-i Fund
+ Benchmark 
+ -  S&P / ASX 200  
+ Index (AUD)
+ Lion Asia Pac Fund
+ Benchmark  
+ -  MSCI AC AP  
+ ex Japan (SGD)
+Lion au-i Fund
+Lion a sia Pac Fund
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-10%
+-5%
+0%
+10%
+5%
+15%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+0%
+15%
+10%
+5%
+20%
+30%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 16
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+14
+ Lion Enhanced
+ Equity Fund
+ Benchmark -  FBM100
+Lion enhanced equity Fund
+Lion small mid c ap Fund
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-30%
+-25%
+-20%
+-15%
+0%
+-5%
+-10%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Note : 
+Weighted Benchmark is derived 
+from 75% weight on FBM70 
+Total Return and 25% weight 
+on FBM Small Cap Total Return
+ Lion Small Mid Cap
+ Fund
+ Weighted Benchmark
+FUnDs PeRFoRMAnce
+YeAR 2025
+
+AI: {'type': 'thinking', 'thinking': 'The `retriever_tool` is returning results from `gelm-bc-mc-ufar-eng-2025.pdf` again, which is the Unit Funds report. I need to specifically target `gelm-others-mc-annual-financial-statement2025.pdf`.\n\nI will try to search for "Statement of Profit or Loss" or "Total Income" and "2025" specifically in the context of the financial statement file. Since I can\'t specify the file in the query in a way that guarantees it, I\'ll use very specific terms that would only appear in a financial statement.'}
+AI tool call: retriever_tool({'query': '"STATEMENT OF PROFIT OR LOSS" 2025 "Total income"'})
+
+Tool retriever_tool: Source 1: gelm-bc-mc-ufar-eng-2025.pdf, page 12
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+10
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Fixed 
+ Income Fund
+ Benchmark 
+ -  12 month FD
+ Lion Growth Fund
+ Benchmark -  FBM100
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-20%
+-15%
+-10%
+-5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Fixed Income Fund
+Lion Growth Fund
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 16
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+14
+ Lion Enhanced
+ Equity Fund
+ Benchmark -  FBM100
+Lion enhanced equity Fund
+Lion small mid c ap Fund
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-30%
+-25%
+-20%
+-15%
+0%
+-5%
+-10%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Note : 
+Weighted Benchmark is derived 
+from 75% weight on FBM70 
+Total Return and 25% weight 
+on FBM Small Cap Total Return
+ Lion Small Mid Cap
+ Fund
+ Weighted Benchmark
+FUnDs PeRFoRMAnce
+YeAR 2025
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 11
+UNIT FUNDS ANNUAL repor T 2025
+9
+ Dana Sejati
+ Benchmark 
+ -  12 month
+ Mudharabah Deposit
+FUnDs PeRFoRMAnce
+YeAR 2025
+0%
+6%
+3%
+5%
+4%
+1%
+2%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Dana s ejati
+Lion Balanced Fund
+Note :
+Weighted Benchmark is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+ Lion Balanced Fund
+ Weighted Benchmark
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 13
+UNIT FUNDS ANNUAL repor T 2025
+11
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted Benchmark  is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/01/2025
+1/02/2025
+1/03/2025
+1/04/2025
+1/05/2025
+1/06/2025
+1/07/2025
+1/08/2025
+1/09/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Progressive Fund
+Lion s trategic Fund
+ Lion Progressive Fund
+ Benchmark -  FBM100
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 15
+UNIT FUNDS ANNUAL repor T 2025
+13
+ Lion AU-i Fund
+ Benchmark 
+ -  S&P / ASX 200  
+ Index (AUD)
+ Lion Asia Pac Fund
+ Benchmark  
+ -  MSCI AC AP  
+ ex Japan (SGD)
+Lion au-i Fund
+Lion a sia Pac Fund
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-10%
+-5%
+0%
+10%
+5%
+15%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+0%
+15%
+10%
+5%
+20%
+30%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+
+AI: {'type': 'thinking', 'thinking': 'I am having trouble getting the `retriever_tool` to return the specific page from the financial statement PDF. I\'ve seen that `gelm-others-mc-annual-financial-statement2025.pdf` exists and has a "Statement of Comprehensive Income" on page 34.\n\nI will try to search for "Net profit" and "2025" again, as that was in the previous successful snippet, and then look for the lines above it which usually contain the revenue/income. I\'ll also try searching for "Insurance revenue" or "Premium income".'}
+AI tool call: retriever_tool({'query': '"Net profit" 2025 "Great Eastern Life Assurance (Malaysia) Berhad"'})
+
+Tool retriever_tool: Source 1: gelm-others-ir-sr-2025.pdf, page 52
+GRI Standard Disclosure Title Page Reference and Remarks
+2-16 Communication of critical concerns Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-17 Collective knowledge of the highest 
+governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate 
+Governance Disclosures, page 8-37
+Great Eastern Takaful Berhad Financial Statements 2025, Statement of 
+Corporate Governance, page 7-41
+2-18 Evaluation of the performance of the 
+highest governance body
+Great Eastern Life Malaysia Financial Statements 2025, Corporate Governance 
+Disclosures, page 6-28
+Great Eastern General Malaysia Financial Statements 2025, Corporate
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 10
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+8
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Dana Restu
+ Benchmark -  FBMS
+Dana Gemilang
+Dana Restu
+-25%
+-20%
+-15%
+5%
+0%
+-5%
+-10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-25%
+-20%
+-5%
+-10%
+-15%
+0%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+ Dana Gemilang
+ Benchmark -  FBMS
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 12
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+10
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Fixed 
+ Income Fund
+ Benchmark 
+ -  12 month FD
+ Lion Growth Fund
+ Benchmark -  FBM100
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-20%
+-15%
+-10%
+-5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Fixed Income Fund
+Lion Growth Fund
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 14
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+12
+ Lion US-i Fund
+ Benchmark 
+ -  S&P 500 (USD)
+ Lion UK-i Fund
+ Benchmark 
+ -  FTSE 100 (GBP)
+Lion us -i Fund
+Lion uK-i Fund
+-20%
+-15%
+0%
+-5%
+-10%
+5%
+10%
+15%
+20%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+10%
+20%
+-5%
+5%
+15%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+FUnDs PeRFoRMAnce
+YeAR 2025
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 16
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+14
+ Lion Enhanced
+ Equity Fund
+ Benchmark -  FBM100
+Lion enhanced equity Fund
+Lion small mid c ap Fund
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-30%
+-25%
+-20%
+-15%
+0%
+-5%
+-10%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Note : 
+Weighted Benchmark is derived 
+from 75% weight on FBM70 
+Total Return and 25% weight 
+on FBM Small Cap Total Return
+ Lion Small Mid Cap
+ Fund
+ Weighted Benchmark
+FUnDs PeRFoRMAnce
+YeAR 2025
+
+AI: {'type': 'thinking', 'thinking': 'I\'ve tried multiple times and the `retriever_tool` is not consistently giving me the financial statement pages. However, I did get one snippet from `gelm-others-mc-annual-financial-statement2025.pdf` page 34 earlier.\n\nLet\'s look at that snippet again:\n"STATEMENT OF COMPREHENSIVE INCOME FOR THE FINANCIAL YEAR ENDED 31 DECEMBER 2025\n2025 2024\nRM’000 RM’000\nNet profit for the financial year 1,534,140 1,298,988"\n\nThis is the *Net Profit*, not the *Revenue*. Revenue (or Total Income) is usually listed at the top of the Statement of Profit or Loss.\n\nSince I cannot find the "Revenue" or "Total Income" figure in the provided snippets and the tool is not returning the top part of that specific page, I must conclude that the provided excerpts do not contain the revenue figure for GE in 2025.\n\nWait, I should try one more thing. I\'ll search for "Insurance revenue" or "Gross written premium" specifically.'}
+AI tool call: retriever_tool({'query': '"Insurance revenue" 2025 "Gross written premium" 2025'})
+
+Tool retriever_tool: Source 1: gelm-bc-mc-ufar-eng-2025.pdf, page 11
+UNIT FUNDS ANNUAL repor T 2025
+9
+ Dana Sejati
+ Benchmark 
+ -  12 month
+ Mudharabah Deposit
+FUnDs PeRFoRMAnce
+YeAR 2025
+0%
+6%
+3%
+5%
+4%
+1%
+2%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-10%
+0%
+-5%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Dana s ejati
+Lion Balanced Fund
+Note :
+Weighted Benchmark is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+ Lion Balanced Fund
+ Weighted Benchmark
+
+Source 2: gelm-bc-mc-ufar-eng-2025.pdf, page 13
+UNIT FUNDS ANNUAL repor T 2025
+11
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Lion Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted Benchmark  is derived 
+from 50% weight on 12 months 
+Fixed Deposits return and 50% 
+weight on FBM100 index return
+-20%
+-15%
+-10%
+0%
+-5%
+5%
+1/01/2025
+1/02/2025
+1/03/2025
+1/04/2025
+1/05/2025
+1/06/2025
+1/07/2025
+1/08/2025
+1/09/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+5%
+0%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion Progressive Fund
+Lion s trategic Fund
+ Lion Progressive Fund
+ Benchmark -  FBM100
+
+Source 3: gelm-bc-mc-ufar-eng-2025.pdf, page 15
+UNIT FUNDS ANNUAL repor T 2025
+13
+ Lion AU-i Fund
+ Benchmark 
+ -  S&P / ASX 200  
+ Index (AUD)
+ Lion Asia Pac Fund
+ Benchmark  
+ -  MSCI AC AP  
+ ex Japan (SGD)
+Lion au-i Fund
+Lion a sia Pac Fund
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-10%
+-5%
+0%
+10%
+5%
+15%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-10%
+-5%
+0%
+15%
+10%
+5%
+20%
+30%
+25%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+
+Source 4: gelm-bc-mc-ufar-eng-2025.pdf, page 17
+UNIT FUNDS ANNUAL repor T 2025
+15
+FUnDs PeRFoRMAnce
+YeAR 2025
+-15%
+-5%
+5%
+0%
+-10%
+10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-15%
+-5%
+-10%
+0%
+5%
+10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+Lion a dvanced s trategic Fund
+Lion asean Fund
+ Lion Advanced  
+ Strategic Fund
+ Weighted Benchmark
+Note : 
+Weighted benchmark derived 
+from 70% weight on Kuala 
+Lumpur Composite Index (KLCI) 
+return and 30% weight on MSCI 
+Asia ex Japan Index return
+ Lion ASEAN Fund
+ Benchmark  
+  -  MSCI ASEAN 
+INDEX (MYR)
+
+Source 5: gelm-bc-mc-ufar-eng-2025.pdf, page 10
+GREAT EASTERN LIFE ASSURANCE (MALAYSIA) BERHAD
+8
+FUnDs PeRFoRMAnce
+YeAR 2025
+ Dana Restu
+ Benchmark -  FBMS
+Dana Gemilang
+Dana Restu
+-25%
+-20%
+-15%
+5%
+0%
+-5%
+-10%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+-25%
+-20%
+-5%
+-10%
+-15%
+0%
+5%
+1/1/2025
+1/2/2025
+1/3/2025
+1/4/2025
+1/5/2025
+1/6/2025
+1/7/2025
+1/8/2025
+1/9/2025
+1/10/2025
+1/11/2025
+1/12/2025
+ Dana Gemilang
+ Benchmark -  FBMS
+
+AI: {'type': 'thinking', 'thinking': 'I have exhausted the search options. The provided documents contain fund performance and a sustainability report, and while I found a "Statement of Comprehensive Income" for Great Eastern Life Assurance (Malaysia) Berhad, the snippet only showed the "Net profit for the financial year" (RM 1,534,140,000 for 2025) and not the total revenue.\n\nI will inform the user that the revenue figure is not available in the provided reports, but I can provide the net profit for Great Eastern Life Assurance (Malaysia) Berhad.'}
+{'type': 'text', 'text': 'Based on the provided reports, the specific total revenue for Great Eastern (GE) in 2025 is not explicitly mentioned. \n\nHowever, according to the **Statement of Comprehensive Income** for **Great Eastern Life Assurance (Malaysia) Berhad** (found in `gelm-others-mc-annual-financial-statement2025.pdf`, page 34), the **net profit for the financial year 2025** was **RM 1,534,140,000**.'}
 
 End of Conversation
