@@ -1,0 +1,32 @@
+# Annual Performance Report: Unit Funds 2025
+
+## Introduction
+This report provides an overview of the performance of various unit funds managed under Great Eastern Life Assurance (Malaysia) Berhad for the year 2025, as detailed in the Unit Funds Annual Report 2025. The analysis covers a diverse range of funds, including balanced, strategic, and regional equity funds, evaluating their performance against established benchmarks.
+
+## Fund Performance Analysis
+
+### 1. Deposit-Linked and Shariah-Compliant Funds
+**Dana Sejati** focused on stability, utilizing a 12-month Mudharabah Deposit as its benchmark. The performance trends for this fund remained relatively stable throughout the year, reflecting the low-risk nature of its underlying assets.
+
+### 2. Balanced and Strategic Funds
+The strategic funds employed weighted benchmarks to balance risk and return:
+- **Lion Balanced Fund** and **Lion Strategic Fund**: Both funds were measured against a weighted benchmark consisting of 50% 12-month Fixed Deposits and 50% FBM100 index returns. These funds aimed to provide a mix of capital preservation and growth.
+- **Lion Advanced Strategic Fund**: This fund adopted a more aggressive posture, with a weighted benchmark of 70% Kuala Lumpur Composite Index (KLCI) and 30% MSCI Asia ex Japan Index, reflecting a higher exposure to equity markets.
+
+### 3. Equity and Regional Funds
+The equity-focused funds showed more significant volatility, consistent with market fluctuations in 2025:
+- **Lion Progressive Fund**: Benchmarked against the FBM100, this fund tracked the performance of the top 100 companies in Malaysia.
+- **Lion ASEAN Fund**: This fund tracked the MSCI ASEAN Index (MYR), providing exposure to the broader Southeast Asian economy.
+- **Lion Asia Pac Fund**: Benchmarked against the MSCI AC AP ex Japan (SGD), this fund showed a wide performance range, reflecting the dynamic nature of the Asia-Pacific markets.
+- **Lion AU-i Fund**: This fund provided specialized exposure to the Australian market, benchmarked against the S&P/ASX 200 Index (AUD).
+
+### 4. Other Specialized Funds
+**Dana Restu** and **Dana Gemilang** were both benchmarked against the FBMS. These funds experienced more pronounced volatility compared to the deposit-linked options, as evidenced by the wider range of performance fluctuations recorded during the year.
+
+## Benchmarking Summary
+The use of diverse benchmarks—ranging from fixed deposits and Mudharabah deposits to sophisticated indices like the MSCI and FBM100—allowed for a precise evaluation of each fund's objective. The weighted benchmarks, in particular, provided a nuanced view of how balanced funds performed relative to a hybrid of risk-free rates and equity growth.
+
+## Conclusion
+The 2025 performance of the unit funds reflects a strategic distribution of assets across various risk profiles. While deposit-linked funds provided stability, the regional and strategic equity funds offered growth opportunities, albeit with higher volatility. Investors' returns were heavily influenced by the performance of the FBM100 and MSCI indices, highlighting the importance of diversified portfolio allocation in a fluctuating market environment.
+
+**Source:** gelm-bc-mc-ufar-eng-2025.pdf (Pages 10, 11, 13, 15, 17)
